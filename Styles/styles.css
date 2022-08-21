@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Coda&family=Comfortaa:wght@300&family=Unica+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*****GRIDS*****/
+
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 0fr 0fr 0fr;
+    grid-template-areas:
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/*****ESTILOS DEL HEADER Y DE LA BARRA DE NAVEGACION*****/
+
+.logo {
+    width: 120px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    grid-gap: 20px;
+}
+
+.menu__item a {
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+}
+
+.menu__item.active a {
+    text-decoration: underline;
+}
+
+/*****ESTILOS DEL CONTENIDO PRINCIPAL*****/
+
+.page {
+    background-color: rgb(133, 8, 8);
+}
+
+.titulos {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.conteiner__intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.texto__intro {
+    font-family: 'Comfortaa', cursive;
+    color: white;
+    font-size: 24px;
+    padding-left: 30px;
+    width: 50%;
+    height: 50%;
+}
+
+.conteiners__prod {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+}
+
+.conteiner__prod {
+    width: 20%;
+    background-color: white;
+    padding: 20px;
+    margin-inline: 6.5%;
+    display: inline-block;
+}
+
+.img__prod {
+    width: 100%;
+}
+
+.btn__home {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.btn__home a {
+    font-family: 'Unica One', cursive;
+    font-size: 30px;
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+/*****ESTILOS DE FOOTER*****/
+
+.titulos__footer {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color: rgb(211, 18, 18);
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    padding-block: 20px;
+}
+
+.box__despedida {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.texto__footer {
+    font-family: 'Comfortaa', cursive;
+    font-size: 20px;
+}
+
+.menu__foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+
+.item__foot a {
+    font-family: 'Unica One', cursive;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.box__contactos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logos__footer {
+    width: 40px;
+}
+
+.conteiner__contactos {
+    display: flex;
+    align-items: center;
+}
+
+.text__insta a {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.text__correo {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+/*****ESTILOS DE PRODUCTOS*****/
+
+.boxs__prod {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 20px;
+}
+
+.box__prod {
+    background-color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 30px;
+}
+
+.imgs__prod {
+    width: 100%;
+}
+
+.titulos__prod {
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    font-size: 250%;
+}
+
+.btn__buy {
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(163, 13, 13);
+    background-color: white;
+    padding: 10px;
+    border-color: rgb(155, 8, 8);
+    border-style: solid;
+}
+
+.btn__car {
+    font-family: 'Unica One', cursive;
+    text-align: center;
+    font-size: 120%;
+    color: rgb(163, 13, 13);
+    background-color: white;
+    padding: 10px;
+    border-color: rgb(155, 8, 8);
+    border-style: solid;
+}
+
+/*****ESTILOS DE PREGUNTAS FRECUENTES*****/
+
+.conteiners__pf {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 20px;
+}
+
+.box__pf {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.img__pf {
+    width: 23%;
+    margin: auto;
+    height: 50%;
+}
+
+.text__body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.titulos__pf {
+    font-family: 'Unica One', cursive;
+    color: red;
+}
+
+.texto__pf {
+    font-family: 'Coda', cursive;
+}
+
+/*****ESTILOS DE CONTACTOS*****/
+
+.page__contactos {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+}
+
+.boxss__contactos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+
+.conteiners__contactos {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+}
+
+.img__contactos {
+    width: 100px;
+    margin-left: 5px;
+}
+
+.text__contactos {
+    font-family: 'Comfortaa', cursive;
+    width: 100%;
+    padding: 10px;
+}
+
+.text__contactos a {
+    text-decoration: none;
+    color: black;
+}
+
+.conteiner__form {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form__contacto {
+    padding: 20px;
+}
+
+input {
+    outline: none;
+}
+
+label {
+    font-family: 'Coda', cursive;
+}
+
+button {
+    border: solid;
+    color: red;
+    border-color: red;
+    padding: 10px;
+}
+
+.form__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/*****RESPONSIVE*****/
+
+@media screen and (max-width: 480px) {
+
+    /*ESTILOS GENERALES*/
+
+    .titulos {
+        font-size: 78px;
+    }
+
+    /*ESTILOS HEADER*/
+
+    header {
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*ESTILOS FOOTER*/
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box__despedida {
+        width: auto;
+        text-align: center;
+    }
+
+    .menu__foot {
+        gap: 8px;
+    }
+
+    /*ESTILOS HOME*/
+
+    .conteiner__intro {
+        flex-direction: column-reverse;
+        padding-top: 0px;
+    }
+
+    .texto__intro {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        width: auto;
+        text-align: center;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+    .conteiners__prod {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .conteiner__prod {
+        width: auto;
+    }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: column;
+    }
+
+    .box__prod {
+        width: auto;
+    }
+
+    .boxs__prod {
+        padding-top: 0;
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pf {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+    }
+
+    .boxss__contactos {
+        padding-top: 0;
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width:75%;
+    }
+
+    .form__contacto {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width: 767px) {
+
+    /*ESTILOS GENERALES*/
+
+    .titulos {
+        font-size: 78px;
+    }
+
+    /*ESTILOS HEADER*/
+
+    header {
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*ESTILOS FOOTER*/
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box__despedida {
+        width: auto;
+        text-align: center;
+    }
+
+    .menu__foot {
+        gap: 8px;
+    }
+
+    /*ESTILOS HOME*/
+
+    .conteiner__intro {
+        flex-direction: column-reverse;
+        padding-top: 0px;
+    }
+
+    .texto__intro {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        width: auto;
+        text-align: center;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+    .conteiners__prod {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .conteiner__prod {
+        width: 60%;
+    }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box__prod {
+        width: 70%;
+    }
+
+    .boxs__prod {
+        padding-top: 0;
+    }
+
+    .titulos__prod{
+        font-size: 240%;
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pf {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+    }
+
+    .boxss__contactos {
+        padding-top: 0;
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width: 75%;
+    }
+
+    .form__contacto {
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*ESTILOS GENERALES*/
+
+    .titulos {
+        font-size: 78px;
+    }
+
+    /*ESTILOS HEADER*/
+
+    header {
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    /*ESTILOS FOOTER*/
+
+    footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box__despedida {
+        width: auto;
+        text-align: center;
+    }
+
+    .menu__foot {
+        gap: 8px;
+    }
+
+    /*ESTILOS HOME*/
+
+    .conteiner__intro {
+        flex-direction: column-reverse;
+    }
+
+    .texto__intro {
+        padding-right: 30px;
+        padding-bottom: 30px;
+        width: auto;
+        text-align: center;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+    .conteiners__prod {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .conteiner__prod {
+        width: auto;
+    }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: row;
+    }
+
+    .box__prod {
+        width: 75%;
+    }
+
+    .boxs__prod {
+        padding-top: 0;
+    }
+
+    .titulos__prod{
+        font-size: 240%;
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pf {
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+    }
+
+    .boxss__contactos {
+        padding-top: 0;
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width: 60%;
+    }
+
+    .form__contacto {
+        width: 100%;
+    }
+}
