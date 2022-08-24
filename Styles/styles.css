@@ -57,6 +57,11 @@ header {
 
 .navbar-nav{
     text-align: center;
+    gap: 10px;
+}
+
+.navbar-toggler {
+    color: red;
 }
 
 /*****ESTILOS DEL CONTENIDO PRINCIPAL*****/
