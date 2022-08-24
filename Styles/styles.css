@@ -38,24 +38,9 @@ footer {
 
 header {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
     position: sticky;
     top: 0%;
     z-index: 100;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    list-style-type: none;
-    gap: 20px;
-    grid-gap: 20px;
 }
 
 .menu__item a {
@@ -68,6 +53,10 @@ header {
 
 .menu__item.active a {
     text-decoration: underline;
+}
+
+.navbar-nav{
+    text-align: center;
 }
 
 /*****ESTILOS DEL CONTENIDO PRINCIPAL*****/
