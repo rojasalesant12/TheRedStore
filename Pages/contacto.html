@@ -36,8 +36,8 @@
     </header>
     <main class="page">
         <h1 class="titulos scale-in-center">Contactos</h1>
-        <div class="page__contactos">
-            <div class="boxss__contactos">
+        <div class="page__contactos container">
+            <div class="boxss__contactos col">
                 <div class="conteiners__contactos scale-in-center">
                     <img class="img__contactos" src="./../Multimedia/Logos/IconWhatsappV2.png" alt="IconWhatsapp">
                     <p class="text__contactos">+54 3718 45-9871</p>
@@ -52,24 +52,24 @@
                             target="_blank">@theredstoree_</a></p>
                 </div>
             </div>
-            <div class="conteiner__form scale-in-center">
-                <form class="form__contacto">
-                    <div class="form__box">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" required>
-                    </div>
-                    <div class="form__box">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required>
-                    </div>
-                    <div class="form__box">
-                        <label for="mensage">Mensaje:</label>
-                        <textarea name="" id="mensage" cols="30" rows="10" required></textarea>
-                    </div>
-                    <div class="btn">
-                        <button>Enviar</button>
-                    </div>
-                </form>
+            <div class="conteiner__form scale-in-center col">
+                <div class="mb-3 w-100">
+                    <label for="exampleFormControlInput1" class="form-label text__form">NOMBRE Y APELLIDO</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Alejandro Rojas">
+                </div>
+                <div class="mb-3 w-100">
+                    <label for="exampleFormControlInput1" class="form-label text__form">CORREO ELECTRÓNICO</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3 w-100">
+                    <label for="exampleFormControlTextarea1" class="form-label text__form">MENSAJE</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="mb-3 w-100 btn__contactos">
+                    <button class="btn btn-primary" type="submit">ENVIAR</button>
+                </div>
             </div>
         </div>
     </main>
