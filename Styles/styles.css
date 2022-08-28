@@ -311,7 +311,6 @@ p{
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    padding: 30px;
 }
 
 .conteiners__contactos {
@@ -332,7 +331,6 @@ p{
     font-family: 'Comfortaa', cursive;
     width: 100%;
     padding: 10px;
-    margin-top: 15px;
 }
 
 .text__contactos a {
@@ -553,10 +551,6 @@ p{
 }
 
 /**********CONTACTOS*********/
-
-.conteiners__contactos:hover{
-    transform: scaleY(1.1) scaleX(1.1);
-}
 
 .text__contactos:hover{
     color: red;
