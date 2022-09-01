@@ -1,0 +1,18 @@
+/*********ESTILOS HOME************/
+
+.conteiner__intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .texto__intro {
+        font-family: 'Comfortaa', cursive;
+        color: white;
+        font-size: 24px;
+        padding-left: 30px;
+        width: 50%;
+        height: 50%;
+    }
+}

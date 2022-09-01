@@ -1,0 +1,37 @@
+.conteiners__prod {
+    display: flex;
+    padding: 30px;
+    gap: 20px;
+
+    .conteiner__prod {
+        width: 20%;
+        background-color: white;
+        padding: 20px;
+        margin-inline: 6.5%;
+        display: inline-block;
+
+        &:hover {
+            transform: scaleY(1.1) scaleX(1.1);
+        }
+    }
+
+    .img__prod {
+        width: 100%;
+    }
+}
+
+.btn__home {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    a {
+        font-family: 'Unica One', cursive;
+        font-size: 30px;
+        text-decoration: none;
+        color: red;
+        padding: 10px;
+        background-color: white;
+        border-radius: 20px;
+    }
+}

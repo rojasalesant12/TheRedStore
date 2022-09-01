@@ -1,0 +1,34 @@
+/*****ESTILOS DEL HEADER Y DE LA BARRA DE NAVEGACION*****/
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+
+    .logo {
+        width: 120px;
+    }
+
+    .navbar-toggler {
+        color: red;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        gap: 10px;
+
+        .menu__item {
+
+            a {
+                font-family: 'Unica One', cursive;
+                font-size: 20px;
+                color: red;
+                text-decoration: none;
+                padding: 10px;
+            }
+
+        }
+
+    }
+}
