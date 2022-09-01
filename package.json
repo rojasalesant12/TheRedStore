@@ -1,0 +1,29 @@
+{
+  "name": "theredstore-rojas",
+  "version": "1.0.0",
+  "description": "Mi Proyecto",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/styles-scss.scss styles/css/styles-css.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojasalesant12/TheRedStore.git"
+  },
+  "keywords": [
+    "git",
+    "init",
+    "theredstore"
+  ],
+  "author": "Alejandro Rojas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rojasalesant12/TheRedStore/issues"
+  },
+  "homepage": "https://github.com/rojasalesant12/TheRedStore#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
