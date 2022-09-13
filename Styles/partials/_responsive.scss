@@ -56,6 +56,43 @@
             width: auto;
         }
     }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: column;
+        padding-top: 0;
+
+        .box__prod {
+            width: auto;
+
+            .titulos__prod {
+                font-size: 240%;
+            }
+        }
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pfs {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+
+        .boxss__contactos {
+            padding-top: 0;
+        }
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width: 75%;
+    }
 }
 
 @media screen and (max-width:409px) {
@@ -125,6 +162,45 @@
             width: 60%;
         }
     }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0;
+
+        .box__prod {
+            width: 70%;
+
+            .titulos__prod {
+                font-size: 240%;
+            }
+        }
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pfs {
+        flex-direction: column;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+
+        .boxss__contactos {
+            padding-top: 0;
+        }
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width: 75%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -180,5 +256,41 @@
         .conteiner__prod {
             width: auto;
         }
+    }
+
+    /*ESTILOS PRODUCTOS*/
+
+    .boxs__prod {
+        flex-direction: row;
+        padding-top: 0;
+
+        .box__prod {
+            width: auto;
+
+            .titulos__prod {
+                font-size: 240%;
+            }
+        }
+    }
+
+    /*ESTILOS PREGUNTAS FRECUENTES*/
+
+    .conteiners__pfs {
+        flex-direction: column;
+    }
+
+    /*ESTILOS CONTACTOS*/
+
+    .page__contactos {
+        flex-direction: column;
+
+        .boxss__contactos {
+            padding-top: 0;
+        }
+    }
+
+    .conteiner__form {
+        margin-bottom: 30px;
+        width: 60%;
     }
 }
