@@ -1,7 +1,7 @@
 /*****ESTILOS DEL HEADER Y DE LA BARRA DE NAVEGACION*****/
 
 header {
-    background-color: white;
+    background-color: $secondaryColor;
     position: sticky;
     top: 0%;
     z-index: 100;
@@ -10,8 +10,12 @@ header {
         width: 120px;
     }
 
+    .navbar{
+        --bs-navbar-color: $secondaryColor;
+    }
+
     .navbar-toggler {
-        color: red;
+        color: $tertiaryColor;
     }
 
     .navbar-nav {
@@ -21,9 +25,9 @@ header {
         .menu__item {
 
             a {
-                font-family: 'Unica One', cursive;
+                font-family: $secondaryText;
                 font-size: 20px;
-                color: red;
+                color: $tertiaryColor;
                 text-decoration: none;
                 padding: 10px;
             }

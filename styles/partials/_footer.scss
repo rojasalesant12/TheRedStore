@@ -23,7 +23,7 @@ footer {
     padding: 15px;
 
     .titulos__footer {
-        font-family: 'Bebas Neue', cursive;
+        font-family: $titulos;
         font-size: 25px;
         color: map-get($colorFoot, mainColorFoot );
     }
@@ -59,7 +59,7 @@ footer {
             .item__foot {
 
                 a {
-                    font-family: 'Unica One', cursive;
+                    font-family: $secondaryText;
                     font-size: 20px;
                     color: map-get($colorFoot, text);
                     text-decoration: none;
@@ -84,8 +84,10 @@ footer {
             display: flex;
             align-items: center;
 
-            .logos__footer {
-                width: 40px;
+            .fa-instagram,
+            .fa-envelope{
+                color: $colorFooter;
+                font-size: 30px;
             }
 
             .text__insta {

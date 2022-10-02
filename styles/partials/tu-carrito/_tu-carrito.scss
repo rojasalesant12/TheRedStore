@@ -1,0 +1,35 @@
+/*********ESTILOS DE TÚ CARRITO**********/
+
+.caja__tu-carrito{
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    .fa-cart-shopping{
+        color: $secondaryColor;
+        font-size: 150px;
+    }
+    
+    .texto__tu-carrito{
+        font-family: $tertiaryText;
+        color: $secondaryColor;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .btn__tu-carrito{
+        background-color: $secondaryColor;
+        width: auto;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        a{
+            text-decoration: none;
+            color: $tertiaryColor;
+            font-family: $secondaryText;
+            font-size: 20px;
+            padding: 20px;
+        }
+    }
+}

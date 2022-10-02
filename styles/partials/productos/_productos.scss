@@ -1,13 +1,11 @@
 /*****ESTILOS DE PRODUCTOS*****/
 
 .boxs__prod {
-    display: flex;
-    justify-content: space-around;
     padding: 30px;
     gap: 20px;
 
     .box__prod {
-        background-color: white;
+        background-color: $secondaryColor;
         width: 25%;
         display: flex;
         flex-direction: column;
@@ -20,31 +18,23 @@
         }
         
         .titulos__prod {
-            font-family: 'Bebas Neue', cursive;
+            font-family: $titulos;
             text-align: center;
             font-size: 250%;
+
+            a{
+                text-decoration: none;
+                color: $textColor;
+
+                &:hover{
+                    color: $mainColor;
+                }
+            }
         }
-        
-        .btn__buy {
-            font-family: 'Unica One', cursive;
-            text-align: center;
-            font-size: 120%;
-            color: rgb(163, 13, 13);
-            background-color: white;
-            padding: 10px;
-            border-color: rgb(155, 8, 8);
-            border-style: solid;
-        }
-        
-        .btn__car {
-            font-family: 'Unica One', cursive;
-            text-align: center;
-            font-size: 120%;
-            color: rgb(163, 13, 13);
-            background-color: white;
-            padding: 10px;
-            border-color: rgb(155, 8, 8);
-            border-style: solid;
+
+        .precio__productos{
+            font-family: $secondaryText;
+            font-size: 200%;
         }
     }
 }
